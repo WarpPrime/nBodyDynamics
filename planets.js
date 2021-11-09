@@ -165,16 +165,16 @@ _presets = {
 		
 		_planets.push(new Planet(1.989e10, window.innerWidth/2, window.innerHeight/2, 0, 0, "#fff0e9"));  // Sun
 
-		_planets.push(new Planet(3.30104e3, window.innerWidth/2+6.98e0*dist1, window.innerHeight/2, 0, 38.86e3*dist2, "#bab0ad"));  // Mercury
-		_planets.push(new Planet(4.86732e4, window.innerWidth/2+1.08208e1*dist1, window.innerHeight/2, 0, 35.02e3*dist2, "#c9ae5d"));  // Venus
-		_planets.push(new Planet(5.9722e4, window.innerWidth/2+1.49598023e1*dist1, window.innerHeight/2, 0, 29.78e3*dist2, "#3064b8"));  // Earth
-		_planets.push(new Planet(6.39e3, window.innerWidth/2+2.27939200e1*dist1, window.innerHeight/2, 0, 24.007e3*dist2, "#bd492a"));  // Mars
+		_planets.push(new Planet(3.30104e3, window.innerWidth/2+6.98e0*_settings.dist1, window.innerHeight/2, 0, 38.86e3*_settings.dist2, "#bab0ad"));  // Mercury
+		_planets.push(new Planet(4.86732e4, window.innerWidth/2+1.08208e1*_settings.dist1, window.innerHeight/2, 0, 35.02e3*_settings.dist2, "#c9ae5d"));  // Venus
+		_planets.push(new Planet(5.9722e4, window.innerWidth/2+1.49598023e1*_settings.dist1, window.innerHeight/2, 0, 29.78e3*_settings.dist2, "#3064b8"));  // Earth
+		_planets.push(new Planet(6.39e3, window.innerWidth/2+2.27939200e1*_settings.dist1, window.innerHeight/2, 0, 24.007e3*_settings.dist2, "#bd492a"));  // Mars
 
-		_planets.push(new Planet(1.898e7, window.innerWidth/2+7.7857e1*dist1, window.innerHeight/2, 0, 13.07e3*dist2, "#f5f0df"));  // Jupiter
-		_planets.push(new Planet(5.683e6, window.innerWidth/2+1.43353e2*dist1, window.innerHeight/2, 0, 9.68e3*dist2, "#ebe1d1"));  // Saturn
+		_planets.push(new Planet(1.898e7, window.innerWidth/2+7.7857e1*_settings.dist1, window.innerHeight/2, 0, 13.07e3*_settings.dist2, "#f5f0df"));  // Jupiter
+		_planets.push(new Planet(5.683e6, window.innerWidth/2+1.43353e2*_settings.dist1, window.innerHeight/2, 0, 9.68e3*_settings.dist2, "#ebe1d1"));  // Saturn
 
-		_planets.push(new Planet(8.681e5, window.innerWidth/2+2.870972e2*dist1, window.innerHeight/2, 0, 6.80e3*dist2, "#a6cbd0"));  // Uranus
-		_planets.push(new Planet(1.024e6, window.innerWidth/2+4.5e2*dist1, window.innerHeight/2, 0, 5.43e3*dist2, "#2a43a3"));  // Neptune
+		_planets.push(new Planet(8.681e5, window.innerWidth/2+2.870972e2*_settings.dist1, window.innerHeight/2, 0, 6.80e3*_settings.dist2, "#a6cbd0"));  // Uranus
+		_planets.push(new Planet(1.024e6, window.innerWidth/2+4.5e2*_settings.dist1, window.innerHeight/2, 0, 5.43e3*_settings.dist2, "#2a43a3"));  // Neptune
 
 		
 // 		for (i=0; i<500; i++) { // asteroid belt
