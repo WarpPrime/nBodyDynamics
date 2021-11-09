@@ -12,6 +12,9 @@ _settings = {
 	barnesHut: false,
 	collisions: _collisionValues[0],
 	damping: 1e-9,
+	
+	dist1:1,
+	dist2:1.414,
 
 	generate: function() {
 		for (i=0; i<512; i++) {
@@ -317,6 +320,9 @@ function init() {
 	globalSettings.add(_settings, 'integration', _integrationValues).name('Integration').listen();
 	globalSettings.add(_settings, 'collisions', _collisionValues).name('Collisions').listen();
 	globalSettings.add(_settings, 'damping', 0, 100).name('Damping').listen();
+	
+	globalSettings.add(_settings, 'dist1', 0, 5).name('dist1').listen();
+	globalSettings.add(_settings, 'dist2', 0, 5).name('dist2').listen();
 
 	globalSettings.add(_settings, 'generate', 10, 1000).name('Generate').listen();
 
