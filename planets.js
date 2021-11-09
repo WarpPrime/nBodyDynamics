@@ -133,34 +133,62 @@ _presets = {
 	solarSystem: function() {
 		_planets = [];
 
-		_planets.push(new Planet(333000, window.innerWidth/2, window.innerHeight/2, 0, 0, "#fff0e9"));  // Sun
+// 		_planets.push(new Planet(333000, window.innerWidth/2, window.innerHeight/2, 0, 0, "#fff0e9"));  // Sun
 
-		_planets.push(new Planet(0.055, window.innerWidth/2+40, window.innerHeight/2, 0, 82, "#bab0ad"));  // Mercury
-		_planets.push(new Planet(0.815, window.innerWidth/2+73, window.innerHeight/2, 0, 67, "#c9ae5d"));  // Venus
-		_planets.push(new Planet(1, window.innerWidth/2+100, window.innerHeight/2, 0, 57, "#3064b8"));  // Earth
-		_planets.push(new Planet(0.107, window.innerWidth/2+152.4, window.innerHeight/2, 0, 46, "#bd492a"));  // Mars
+// 		_planets.push(new Planet(0.055, window.innerWidth/2+40, window.innerHeight/2, 0, 82, "#bab0ad"));  // Mercury
+// 		_planets.push(new Planet(0.815, window.innerWidth/2+73, window.innerHeight/2, 0, 67, "#c9ae5d"));  // Venus
+// 		_planets.push(new Planet(1, window.innerWidth/2+100, window.innerHeight/2, 0, 57, "#3064b8"));  // Earth
+// 		_planets.push(new Planet(0.107, window.innerWidth/2+152.4, window.innerHeight/2, 0, 46, "#bd492a"));  // Mars
 
-		_planets.push(new Planet(317.8, window.innerWidth/2+520, window.innerHeight/2, 0, 25, "#f5f0df"));  // Jupiter
-		_planets.push(new Planet(95.16, window.innerWidth/2+950, window.innerHeight/2, 0, 18.5, "#ebe1d1"));  // Saturn
+// 		_planets.push(new Planet(317.8, window.innerWidth/2+520, window.innerHeight/2, 0, 25, "#f5f0df"));  // Jupiter
+// 		_planets.push(new Planet(95.16, window.innerWidth/2+950, window.innerHeight/2, 0, 18.5, "#ebe1d1"));  // Saturn
 
-		_planets.push(new Planet(14.54, window.innerWidth/2+1920, window.innerHeight/2, 0, 12.5, "#a6cbd0"));  // Uranus
-		_planets.push(new Planet(17.15, window.innerWidth/2+3010, window.innerHeight/2, 0, 9.5, "#2a43a3"));  // Neptune
+// 		_planets.push(new Planet(14.54, window.innerWidth/2+1920, window.innerHeight/2, 0, 12.5, "#a6cbd0"));  // Uranus
+// 		_planets.push(new Planet(17.15, window.innerWidth/2+3010, window.innerHeight/2, 0, 9.5, "#2a43a3"));  // Neptune
+		
+// 		_planets.push(new Planet(1.989e30, window.innerWidth/2, window.innerHeight/2, 0, 0, "#fff0e9"));  // Sun
 
-		for (i=0; i<500; i++) { // asteroid belt
-			var r = Math.floor(Math.random() * 95) + 206;
-			var theta = Math.floor(Math.random() * 360);
+// 		_planets.push(new Planet(3.30104e23, window.innerWidth/2+6.98e10, window.innerHeight/2, 0, 38.86e3, "#bab0ad"));  // Mercury
+// 		_planets.push(new Planet(4.86732e24, window.innerWidth/2+1.08208e11, window.innerHeight/2, 0, 35.02e3, "#c9ae5d"));  // Venus
+// 		_planets.push(new Planet(5.9722e24, window.innerWidth/2+1.49598023e11, window.innerHeight/2, 0, 29.78e3, "#3064b8"));  // Earth
+// 		_planets.push(new Planet(6.39e23, window.innerWidth/2+2.27939200e11, window.innerHeight/2, 0, 24.007e3, "#bd492a"));  // Mars
 
-			var x = r * Math.sin(theta);
-			var y = r * Math.cos(theta);
+// 		_planets.push(new Planet(1.898e27, window.innerWidth/2+7.7857e11, window.innerHeight/2, 0, 13.07e3, "#f5f0df"));  // Jupiter
+// 		_planets.push(new Planet(5.683e26, window.innerWidth/2+1.43353e12, window.innerHeight/2, 0, 9.68e3, "#ebe1d1"));  // Saturn
 
-			var v = ((0.523909126804 * r) + 274.320769713) / (0.0402303738198 * r + 1.68242792763)
+// 		_planets.push(new Planet(8.681e25, window.innerWidth/2+2.870972e12, window.innerHeight/2, 0, 6.80e3, "#a6cbd0"));  // Uranus
+// 		_planets.push(new Planet(1.024e26, window.innerWidth/2+4.5e12, window.innerHeight/2, 0, 5.43e3, "#2a43a3"));  // Neptune
 
-			var vx = (v * Math.sin(theta-(Math.PI/2))) + (Math.random()*0.2-0.1);
-			var vy = (v * Math.cos(theta-(Math.PI/2))) + (Math.random()*0.2-0.1);
+		
+		_planets.push(new Planet(1.989e10, window.innerWidth/2, window.innerHeight/2, 0, 0, "#fff0e9"));  // Sun
 
-			_planets.push(new Planet(0.0001, (window.innerWidth/2)+x, (window.innerHeight/2)+y, vx, vy, "#ffffff"));
-			// 206 to 280
-		}
+		_planets.push(new Planet(3.30104e3, window.innerWidth/2+6.98e0, window.innerHeight/2, 0, 38.86e1, "#bab0ad"));  // Mercury
+		_planets.push(new Planet(4.86732e4, window.innerWidth/2+1.08208e1, window.innerHeight/2, 0, 35.02e1, "#c9ae5d"));  // Venus
+		_planets.push(new Planet(5.9722e4, window.innerWidth/2+1.49598023e1, window.innerHeight/2, 0, 29.78e1, "#3064b8"));  // Earth
+		_planets.push(new Planet(6.39e3, window.innerWidth/2+2.27939200e1, window.innerHeight/2, 0, 24.007e1, "#bd492a"));  // Mars
+
+		_planets.push(new Planet(1.898e7, window.innerWidth/2+7.7857e1, window.innerHeight/2, 0, 13.07e1, "#f5f0df"));  // Jupiter
+		_planets.push(new Planet(5.683e6, window.innerWidth/2+1.43353e2, window.innerHeight/2, 0, 9.68e1, "#ebe1d1"));  // Saturn
+
+		_planets.push(new Planet(8.681e5, window.innerWidth/2+2.870972e2, window.innerHeight/2, 0, 6.80e1, "#a6cbd0"));  // Uranus
+		_planets.push(new Planet(1.024e6, window.innerWidth/2+4.5e2, window.innerHeight/2, 0, 5.43e1, "#2a43a3"));  // Neptune
+
+		
+// 		for (i=0; i<500; i++) { // asteroid belt
+// 			var r = Math.floor(Math.random() * 95) + 206;
+// 			var theta = Math.floor(Math.random() * 360);
+
+// 			var x = r * Math.sin(theta);
+// 			var y = r * Math.cos(theta);
+
+// 			var v = ((0.523909126804 * r) + 274.320769713) / (0.0402303738198 * r + 1.68242792763)
+
+// 			var vx = (v * Math.sin(theta-(Math.PI/2))) + (Math.random()*0.2-0.1);
+// 			var vy = (v * Math.cos(theta-(Math.PI/2))) + (Math.random()*0.2-0.1);
+
+// 			_planets.push(new Planet(0.0001, (window.innerWidth/2)+x, (window.innerHeight/2)+y, vx, vy, "#ffffff"));
+// 			// 206 to 280
+// 		}
 
 	},
 
