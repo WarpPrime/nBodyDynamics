@@ -14,7 +14,7 @@ _settings = {
 	damping: 1e-9,
 	
 	dist1:5,
-	dist2:0.6,
+	dist2:0.06,
 
 	generate: function() {
 		for (i=0; i<512; i++) {
