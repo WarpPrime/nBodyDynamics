@@ -551,7 +551,7 @@ function reDraw() {
 		_planets = [];
 		_collisions = [];
 	}
-	_ctx.fillStyle = "rgba(42, 42, 42, " + alpha + ")";
+	_ctx.fillStyle = "rgba(0, 0, 0, " + alpha + ")";
 	_ctx.fillRect(0, 0, _can.width, _can.height);
 	for(var i = 0; i<_planets.length; i++) {
 		_planets[i].draw(_ctx);
